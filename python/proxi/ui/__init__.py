@@ -10,7 +10,7 @@ import proxi.dev as dev
 import proxi.console as console
 import proxi.ui.resources.proxiQtResources as proxiQtResources
 import qt_material
-from . import proxiStyle_css as css
+# from . import proxiStyle_css as css
 from PySide6 import QtGui, QtWidgets
 from typing import Callable, cast, TYPE_CHECKING
 # from importlib.machinery import SourceFileLoader
@@ -73,8 +73,8 @@ UNREAL_APP.setFont(defaultFont)
 
 # Apply material theme and any global custom style overrides we have
 console.debug('Applying base theme', timestamp=True)
-qt_material.apply_stylesheet(UNREAL_APP, theme='dark_bluegrey.xml')
+# qt_material.apply_stylesheet(UNREAL_APP, theme='dark_bluegrey.xml')
 console.debug('Applying custom theme', timestamp=True)
-UNREAL_APP.setStyleSheet(UNREAL_APP.styleSheet() + css.STYLESHEET.format(**os.environ))
+# UNREAL_APP.setStyleSheet(UNREAL_APP.styleSheet() + css.STYLESHEET.format(**os.environ))
 
 console.debug('Module init complete', timestamp=True)
