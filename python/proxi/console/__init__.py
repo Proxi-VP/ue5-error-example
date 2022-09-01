@@ -7,7 +7,6 @@ import traceback
 import datetime
 import unreal
 import proxi.config as config
-import proxi.config.timeFormats as timeFormats
 import proxi.dev as dev
 from typing import Callable
 from types import TracebackType
@@ -80,7 +79,7 @@ def log(outputToPrint: str|object, timestamp: bool=False, stacktrace: bool=False
 
     # logging format
     if timestamp:
-        ts = datetime.datetime.now().strftime(timeFormats.TimeFormats.console)
+        ts = datetime.datetime.now().strftime(config.TimeFormats.console)
         loggingMethod('PROXi ({}:{}) -> {} @ {}{} {}'.format(path, line, name, ts, colon, outputToPrint))
     else:
         loggingMethod('PROXi ({}:{}) -> {}{} {}'.format(path, line, name, colon, outputToPrint))

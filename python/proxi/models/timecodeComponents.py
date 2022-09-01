@@ -3,7 +3,7 @@
 
 from __future__ import annotations 
 
-import proxi.config.timecode as timeCode
+import proxi.config as config
 from dataclasses import dataclass
 from enum import Enum, auto
 
@@ -31,6 +31,6 @@ class TimecodeComponents:
             str: Timecode string
         '''
 
-        frameDelimiter = frameDelimiter or timeCode.Timecode.defaultFrameDelimiter
+        frameDelimiter = frameDelimiter or config.Timecode.defaultFrameDelimiter
         frameDelimiterString = ':' if frameDelimiter == FrameDelimeter.colon else ';'
         return f'{self.hours:02}:{self.minutes:02}:{self.seconds:02}{frameDelimiterString}{self.frames:02}'
