@@ -8,8 +8,8 @@ import importlib
 import os
 
 
-_DEBUG_FILE = os.path.expanduser(r'~\Documents\proxi-unreal-debug')
-_DEV_FILE = os.path.expanduser(r'~\Documents\proxi-unreal-dev')
+_DEBUG_FILE = os.path.expanduser(r'~\Documents\unreal-debug')
+_DEV_FILE = os.path.expanduser(r'~\Documents\unreal-dev')
 DEBUG_MODE = os.path.isfile(_DEBUG_FILE)
 DEV_MODE = os.path.isfile(_DEV_FILE)
 print(f'Debug mode? {DEBUG_MODE}')
