@@ -1,0 +1,19 @@
+{
+    "include": ["*", "**/*"],
+    "exclude": [
+        "**/lib",
+        "**/.autocomplete",
+        "**/*_ui.py"
+    ],
+    "reportGeneralTypeIssues": "error",
+    "reportDuplicateImport": "warning",
+    "reportUndefinedVariable": "error",
+    "reportMissingImports": "error",
+    "reportMissingParameterType": "none",
+    "reportUnknownMemberType": "none",
+    "reportUnknownArgumentType": "none",
+    "reportIncompatibleMethodOverride":"warning",
+    "reportUnnecessaryIsInstance":"error",
+    "reportUnnecessaryComparison":"error",
+    // "typeCheckingMode": "strict"
+}

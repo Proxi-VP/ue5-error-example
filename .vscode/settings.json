@@ -1,0 +1,67 @@
+{
+    "editor.tabSize": 4,
+    "files.exclude": {
+        "**/*.pyc": true,
+        "**/*.exe": true,
+        "**/*.dll": true,
+        "**/__pycache__": true
+    },
+    // "python.autoComplete.extraPaths": [
+    //     "${workspaceFolder}\\python\\.autocomplete",
+    //     "${workspaceFolder}\\python\\lib",
+    //     "${workspaceFolder}\\python"
+    // ],
+    "python.linting.enabled": false,
+    "python.languageServer": "Pylance",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}\\python\\.autocomplete",
+        "${workspaceFolder}\\python\\lib",
+        "${workspaceFolder}\\python"
+    ],
+    "autoDocstring.quoteStyle": "'''",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportDuplicateImport": "warning",
+        "reportGeneralTypeIssues": "error",
+        "reportUndefinedVariable": "error",
+        "reportMissingImports": "error",
+        "reportMissingParameterType": "none",
+        "reportUnknownMemberType": "none",
+        "reportUnknownArgumentType": "none",
+        "reportIncompatibleMethodOverride":"warning",
+        "reportUnnecessaryIsInstance":"error",
+        "reportUnnecessaryComparison":"error"
+    },
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.autoImportCompletions": false,
+    "search.exclude": {
+        "**/.autocomplete": true,
+        "**/lib": true
+    },
+    "todo-tree.filtering.excludeGlobs": [
+        "**/node_modules",
+        "**/lib"
+    ],
+    "VSCodeCounter.outputAsCSV": false,
+    "VSCodeCounter.exclude": [
+        "**/.gitignore",
+        "**/.vscode/**",
+        "**/node_modules/**",
+        "**/lib/**",
+        "**/.autocomplete/**"
+    ],
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "NOTE",
+        "[ ]",
+        "[x]",
+        "[o]",
+        "[-]"
+    ],
+    "vscode-pets.petColor": "red",
+    "vscode-pets.position": "explorer",
+    "vscode-pets.theme": "castle"
+}

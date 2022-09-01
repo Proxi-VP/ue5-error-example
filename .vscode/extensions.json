@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "magicstack.magicpython",
+        "njpwerner.autodocstring",
+        "uctakeoff.vscode-counter",
+        "gruntfuggly.todo-tree",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "vscode-icons-team.vscode-icons"
+    ]
+}
