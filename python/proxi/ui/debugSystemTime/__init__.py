@@ -75,7 +75,7 @@ class DebugSystemTime(QtMainWindowWrapper):
 
         dev.reloadModules([css])
 
-        self.setStyleSheet(ui.UNREAL_APP.styleSheet() + css.STYLESHEET.format(**os.environ))
+        # self.setStyleSheet(ui.UNREAL_APP.styleSheet() + css.STYLESHEET.format(**os.environ))
         QtWidgets.QApplication.instance().processEvents()
 
     def eventTick(self, delta_seconds, forceUpdate=False):

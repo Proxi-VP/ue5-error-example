@@ -8,7 +8,7 @@ import sys
 import importlib.util as importUtil
 import proxi.dev as dev
 import proxi.console as console
-import proxi.ui.resources.proxiQtResources as proxiQtResources
+# import proxi.ui.resources.proxiQtResources as proxiQtResources
 import qt_material
 # from . import proxiStyle_css as css
 from PySide6 import QtGui, QtWidgets
@@ -59,17 +59,17 @@ console.debug(f'QApplication instance contains a total of {len(UNREAL_APP.allWid
 
 # Set default window icon (this uses `proxiQtResources`)
 console.debug('Setting Qt prefs', timestamp=True)
-dummy = proxiQtResources.qt_resource_name
+# dummy = proxiQtResources.qt_resource_name
 logo = QtGui.QIcon(":/favicon.png")
 UNREAL_APP.setWindowIcon(logo)
 
 # Load and set fonts
-console.debug('Adding fonts', timestamp=True)
-qt_material.add_fonts()
-defaultFont = QtGui.QFont('Roboto')
-defaultFont.setPixelSize(14)
-defaultFont.setStyleStrategy(QtGui.QFont.PreferAntialias)
-UNREAL_APP.setFont(defaultFont)
+# console.debug('Adding fonts', timestamp=True)
+# qt_material.add_fonts()
+# defaultFont = QtGui.QFont('Roboto')
+# defaultFont.setPixelSize(14)
+# defaultFont.setStyleStrategy(QtGui.QFont.PreferAntialias)
+# UNREAL_APP.setFont(defaultFont)
 
 # Apply material theme and any global custom style overrides we have
 console.debug('Applying base theme', timestamp=True)
